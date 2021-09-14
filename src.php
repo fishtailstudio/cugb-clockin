@@ -19,7 +19,7 @@ function cugbClockin()
         'allow_redirects' => ['max' => 10], //最大重定向次数
     ]);
     //1.get请求登录页，获取execution和system参数
-    $url = 'https://cas.cugb.edu.cn/login?service=http://stu.cugb.edu.cn/ ';
+    $url = 'https://cas.cugb.edu.cn/login?service=https://stu.cugb.edu.cn/ ';
     $html = $client->get($url)->getBody()->getContents();
     $pattern = '/name="execution" value="(.*?)"\/>.*id="userLoginSystem" name="system"\n *value="(.*?)">/';
     preg_match($pattern, $html, $matches); //匹配execution和system参数
