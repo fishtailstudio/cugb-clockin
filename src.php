@@ -55,14 +55,12 @@ function cugbClockin()
     $url = 'https://stu.cugb.edu.cn/syt/zzapply/operation.htm';
     $data = [
         'xmqkb'              => ['id' => '4a4ce9d6725c1d4001725e38fbdb07cd'],
-        'c1'                 => '37.2℃及以下',
-        'c2'                 => '健康',
-        'c17'                => '否',
+        'c1'                 => '是',
         'c4'                 => '否',
-        'c5'                 => '否',
-        'c6'                 => '否',
-        'c9'                 => '否',
         'c7'                 => '否',
+        'c9'                 => '否',
+        'c17'                => '否',
+        'c19'                => '是',
         'type'               => 'YQSJCJ',
         'location_longitude' => $longitude, //位置经度
         'location_latitude'  => $latitude, //位置纬度
