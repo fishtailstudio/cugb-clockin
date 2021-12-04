@@ -74,7 +74,11 @@ function cugbClockin()
     ];
     $res = $client->post($url, ['form_params' => $data, 'headers' => $headers])->getBody()->getContents();
     //打卡成功返回“success”，已打卡返回“Applied today”
-    if ($res == 'success') echo '打卡成功';
-    elseif ($res == 'Applied today') echo '今日已打卡';
-    else echo '未知错误';
+    if ($res == 'success') {
+        echo '打卡成功';
+    } elseif ($res == 'Applied today') {
+        echo '今日已打卡';
+    } else {
+        echo '未知错误';
+    }
 }
